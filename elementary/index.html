@@ -7,10 +7,16 @@
     <title>Vue.Js Tutorials</title>
 </head>
 <body>
-    <div id="app">
-        {{ message }}
-    </div>
+    <!-- <div id="app">
+        ini {{ message }}
+    </div> -->
 
+    <!-- other try -->
+    <div id="app" v-text="message"></div>
+    <!-- <div id="app" v-html="message"></div> -->
+    <p/>
+
+    Bind <br/>
     <div id="app-2">
         <span v-bind:title="message">
             Hover your mouse over me for a few seconds
@@ -18,10 +24,14 @@
         </span>
     </div>
 
+    <p/>
+    Pengondisian <br/>
     <div id="app-3">
       <span v-if="seen">Now you see me</span>
     </div>
 
+    <p/>
+    Perulangan <br/>
     <div id="app-4">
         <ol>
             <li v-for="todo in todos">
