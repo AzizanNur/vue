@@ -1,8 +1,12 @@
 var app = new Vue({
     el: '#app',
     data: {
-      show: true,
-      message: 'Hello Vue! Pasti bisa'
+      // show: true, //way data is boolean
+      //show: false, //way data is opposite in html use !
+      //show: 'ready', //other way if data is not boolean
+      show:true,
+      message: 'Hello World! Pasti bisa',
+      message2: 'Hello Vue!'
     }
   })
 
