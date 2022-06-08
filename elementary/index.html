@@ -7,15 +7,18 @@
     <title>Vue.Js Tutorials</title>
 </head>
 <body>
-    <!-- <div id="app">
-        ini {{ message }}
-    </div> -->
+    
+    Simpel rendering
+    <div id="app">
+        <p v-if="show">{{ message }}</p>
+    </div>
 
     <!-- other try -->
-    <div id="app" v-text="message"></div>
-    <!-- <div id="app" v-html="message"></div> -->
+    <!-- <div id="app" v-text="message"></div>
+    <div id="app" v-html="message"></div>
+    <p/> -->
+    
     <p/>
-
     Bind <br/>
     <div id="app-2">
         <span v-bind:title="message">
