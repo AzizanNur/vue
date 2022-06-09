@@ -1,4 +1,4 @@
-var app = new Vue({
+let app = new Vue({
     el: '#app',
     data: {
       // show: true, //way data is boolean
@@ -10,21 +10,21 @@ var app = new Vue({
     }
   })
 
-  var app2 = new Vue({
+  let app2 = new Vue({
     el: '#app-2',
     data: {
       message: 'You loaded this page on ' + new Date().toLocaleString()
     }
   })
 
-  var app3 = new Vue({
+  let app3 = new Vue({
     el: '#app-3',
     data: {
       seen: true
     }
   })
 
-  var app4 = new Vue({
+  let app4 = new Vue({
     el: '#app-4',
     data: {
       todos: [
@@ -62,6 +62,20 @@ var app = new Vue({
           kelas = 'udah bisa masuk sekolah ya';
         }
         return kelas;
+      }
+    }
+  })
+
+  let appMethods = new Vue({
+    el: '#app-methods',
+    data: {
+      int1: 1,
+      int2: 2,
+      result: null
+    },
+    methods:{
+      sumProses: function(){
+        return this.result = this.int1 + this.int2;
       }
     }
   })
