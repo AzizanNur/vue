@@ -8,22 +8,29 @@
 </head>
 <body>
     
-    Simpel rendering
-    <div id="app">
+    <!-- computed -->
+    <div id="app-computed">
+        <p> Result dari {{ int1 }} + {{ int2 }} is {{ sum }}</p>
+        <p>{{ umur }}</p>
+        hay sekarang kelasmu adalah <b>{{ kelas }}</b>
+    </div>
+
+    <!-- Simpel rendering -->
+    <!-- <div id="app"> -->
         <!-- <p v-if="show == 'ready'">{{ message }}</p> -->
         <!-- <p v-if="!show">{{ message }}</p> -->
         
         <!--use if else-->
-        <p v-if="show">{{ message }}</p> 
-        <p v-else="show">{{ message2 }}</p> 
-    </div>
+        <!-- <p v-if="show">{{ message }}</p>  -->
+        <!-- <p v-else="show">{{ message2 }}</p>  -->
+    <!-- </div> -->
 
     <!-- other try -->
     <!-- <div id="app" v-text="message"></div>
     <div id="app" v-html="message"></div>
     <p/> -->
     
-    <p/>
+    <!-- <p/>
     Bind <br/>
     <div id="app-2">
         <span v-bind:title="message">
@@ -46,7 +53,7 @@
             {{ todo.text }}
             </li>
         </ol>
-    </div>
+    </div> -->
     
     <script src="assets/vendor/vue.js"></script>
     <script src="assets/js/app.js"></script>

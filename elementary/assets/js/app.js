@@ -34,3 +34,34 @@ var app = new Vue({
       ]
     }
   })
+
+  let appComputed = new Vue({
+    el: '#app-computed',
+    data: {
+      int1: 1,
+      int2: 4
+    },
+    computed: {
+      sum: function(){
+        return this.int1+this.int2;
+      },
+      umur: function(){
+        let umurKata = '';
+        if(this.int1 == 2){
+          umurKata = 'umur satu bro';
+        }else{
+          umurKata = 'umur 2 bro' ;
+        }
+        return umurKata;
+      },
+      kelas: function(){
+        let kelas = 'belum bisa masuk ya';
+        if(this.sum <= 3){
+          kelas = 'ini masuk kelas batita dan masuk balita';
+        }else{
+          kelas = 'udah bisa masuk sekolah ya';
+        }
+        return kelas;
+      }
+    }
+  })
